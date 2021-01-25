@@ -40,6 +40,7 @@ android {
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
+        multiDexEnabled true
     }
 }
 
@@ -49,6 +50,7 @@ repositories {
 
 
 dependencies {
+    implementation 'com.android.support:multidex:1.0.3'
     implementation 'com.tom_roush:pdfbox-android:1.8.10.0'
     implementation 'com.facebook.react:react-native:+'
 }
